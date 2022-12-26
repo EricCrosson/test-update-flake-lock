@@ -16,3 +16,6 @@ jobs:
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Update flake.lock
         uses: EricCrosson/update-flake-lock@main
+        with:
+          pr-assignees: EricCrosson
+          pr-reviewers: EricCrosson
